@@ -1,0 +1,62 @@
+\contentsline {figure}{\numberline {{1-1}}{\ignorespaces Private networking and node selection}}{24}{figure.1.1}
+\contentsline {figure}{\numberline {{3-1}}{\ignorespaces Overall system architecture}}{35}{figure.3.1}
+\contentsline {figure}{\numberline {{3-2}}{\ignorespaces Code snippet for tntegration of OpenCL API with RPC}}{40}{figure.3.2}
+\contentsline {figure}{\numberline {{3-3}}{\ignorespaces Decentralized resource discovery}}{43}{figure.3.3}
+\contentsline {figure}{\numberline {{3-4}}{\ignorespaces Energy consumption for resource discovery mechanism}}{46}{figure.3.4}
+\contentsline {figure}{\numberline {{3-5}}{\ignorespaces Bandwidth measurement}}{48}{figure.3.5}
+\contentsline {figure}{\numberline {{3-6}}{\ignorespaces Performance measurement of remote offloading}}{48}{figure.3.6}
+\contentsline {figure}{\numberline {{3-7}}{\ignorespaces Overhead of SocialVPN in terms of execution time}}{49}{figure.3.7}
+\contentsline {figure}{\numberline {{3-8}}{\ignorespaces Overhead of SocialVPN in terms of energy consumption}}{49}{figure.3.8}
+\contentsline {figure}{\numberline {{4-1}}{\ignorespaces Program flow diagram for OpenCL workloads(A)}}{57}{figure.4.1}
+\contentsline {figure}{\numberline {{4-2}}{\ignorespaces Program flow diagram for OpenCL workloads(B)}}{58}{figure.4.2}
+\contentsline {figure}{\numberline {{4-3}}{\ignorespaces Computation to Communicaiton ratio for sobelfilter}}{62}{figure.4.3}
+\contentsline {figure}{\numberline {{4-4}}{\ignorespaces Computation to communication ratio for matrix multiplication}}{62}{figure.4.4}
+\contentsline {figure}{\numberline {{4-5}}{\ignorespaces Computation to communication ratio for hidden Markov model}}{63}{figure.4.5}
+\contentsline {figure}{\numberline {{4-6}}{\ignorespaces Computation to communication ratio for {\it N}-body physics}}{63}{figure.4.6}
+\contentsline {figure}{\numberline {{4-7}}{\ignorespaces Total execution time for sobelfilter with various configurations}}{65}{figure.4.7}
+\contentsline {figure}{\numberline {{4-8}}{\ignorespaces Total execution time for matrix multiplication with various configurations}}{65}{figure.4.8}
+\contentsline {figure}{\numberline {{4-9}}{\ignorespaces Total execution time for hidden Markov model with various configurations}}{66}{figure.4.9}
+\contentsline {figure}{\numberline {{4-10}}{\ignorespaces Total execution time for {\it N}-body physics with various configurations}}{66}{figure.4.10}
+\contentsline {figure}{\numberline {{4-11}}{\ignorespaces Energy consumption for sobelfilter with various configurations}}{67}{figure.4.11}
+\contentsline {figure}{\numberline {{4-12}}{\ignorespaces Energy consumption for matrix multiplication with various configurations}}{67}{figure.4.12}
+\contentsline {figure}{\numberline {{4-13}}{\ignorespaces Energy consumption for hidden Markov model with various configurations}}{68}{figure.4.13}
+\contentsline {figure}{\numberline {{4-14}}{\ignorespaces Energy consumption for {\it N}-body physics with various configurations}}{68}{figure.4.14}
+\contentsline {figure}{\numberline {{5-1}}{\ignorespaces Performance for sobelfilter with various network configurations}}{76}{figure.5.1}
+\contentsline {figure}{\numberline {{5-2}}{\ignorespaces Performance differences between various workloads}}{76}{figure.5.2}
+\contentsline {figure}{\numberline {{5-3}}{\ignorespaces Structure of machine learning-based runtime scheduler}}{78}{figure.5.3}
+\contentsline {figure}{\numberline {{5-4}}{\ignorespaces Offloading scheduling accuracy of various machine learning algorithms}}{80}{figure.5.4}
+\contentsline {figure}{\numberline {{5-5}}{\ignorespaces Scheduling accuracy of offline schedulers}}{83}{figure.5.5}
+\contentsline {figure}{\numberline {{5-6}}{\ignorespaces Penalty(execution time) normalized to the oracle scheduler}}{84}{figure.5.6}
+\contentsline {figure}{\numberline {{5-7}}{\ignorespaces Penalty(energy consumption) normalized to the oracle scheduler}}{85}{figure.5.7}
+\contentsline {figure}{\numberline {{5-8}}{\ignorespaces Adaptability of the online scheduler against dynamic network conditions}}{88}{figure.5.8}
+\contentsline {figure}{\numberline {{6-1}}{\ignorespaces Overall architecture of MALMOS with online training}}{95}{figure.6.1}
+\contentsline {figure}{\numberline {{6-2}}{\ignorespaces Pseudo-code for adaptive online training mechanism}}{99}{figure.6.2}
+\contentsline {figure}{\numberline {{6-3}}{\ignorespaces An example of the adaptive online training mechanism}}{100}{figure.6.3}
+\contentsline {figure}{\numberline {{6-4}}{\ignorespaces Training time comparison for three machine learning algorithms}}{104}{figure.6.4}
+\contentsline {figure}{\numberline {{6-5}}{\ignorespaces Classification time comparison for three machine learning algorithms}}{104}{figure.6.5}
+\contentsline {figure}{\numberline {{6-6}}{\ignorespaces Scheduling accuracy for hidden Markov model with various configurations}}{107}{figure.6.6}
+\contentsline {figure}{\numberline {{6-7}}{\ignorespaces Scheduling accuracy for matrix multiplication with various configurations}}{107}{figure.6.7}
+\contentsline {figure}{\numberline {{6-8}}{\ignorespaces Scheduling accuracy for sobelfilter with various configurations}}{108}{figure.6.8}
+\contentsline {figure}{\numberline {{6-9}}{\ignorespaces Scheduling accuracy for Linpack with various configurations}}{108}{figure.6.9}
+\contentsline {figure}{\numberline {{6-10}}{\ignorespaces Scheduling accuracy for Go game with various configurations}}{109}{figure.6.10}
+\contentsline {figure}{\numberline {{6-11}}{\ignorespaces Total execution time of 150 Linpack runs}}{110}{figure.6.11}
+\contentsline {figure}{\numberline {{7-1}}{\ignorespaces Self-organizing latency-aware resource ensemble}}{116}{figure.7.1}
+\contentsline {figure}{\numberline {{7-2}}{\ignorespaces Map and Reduce functions based multicast tree builder}}{118}{figure.7.2}
+\contentsline {subfigure}{\numberline {A}{\ignorespaces {Symphony topology}}}{118}{figure.7.2}
+\contentsline {subfigure}{\numberline {B}{\ignorespaces {Multicast tree}}}{118}{figure.7.2}
+\contentsline {figure}{\numberline {{7-3}}{\ignorespaces Example for utility functions for cluster distance and size}}{120}{figure.7.3}
+\contentsline {subfigure}{\numberline {A}{\ignorespaces {Utility for Distance(\textit {D$_{max}$} = 100)}}}{120}{figure.7.3}
+\contentsline {subfigure}{\numberline {B}{\ignorespaces {Utility for Size(\textit {S$_{min}$} = 100)}}}{120}{figure.7.3}
+\contentsline {figure}{\numberline {{7-4}}{\ignorespaces Pseudo-code for self-organizing and managing clustering system}}{121}{figure.7.4}
+\contentsline {figure}{\numberline {{7-5}}{\ignorespaces Average latency of intra-cluster with \textit {S$_{min}$} = 50}}{124}{figure.7.5}
+\contentsline {figure}{\numberline {{7-6}}{\ignorespaces Average latency of intra-cluster with \textit {S$_{min}$} = 100}}{124}{figure.7.6}
+\contentsline {figure}{\numberline {{7-7}}{\ignorespaces Average latency of intra-cluster with \textit {S$_{min}$} = 200}}{125}{figure.7.7}
+\contentsline {figure}{\numberline {{7-8}}{\ignorespaces The number of created clusters and the population of clusters}}{126}{figure.7.8}
+\contentsline {figure}{\numberline {{7-9}}{\ignorespaces Percentage of nodes having more cluster member than \textit {S$_{min}$} = 50}}{127}{figure.7.9}
+\contentsline {figure}{\numberline {{7-10}}{\ignorespaces Percentage of nodes having more cluster member than \textit {S$_{min}$} = 100}}{127}{figure.7.10}
+\contentsline {figure}{\numberline {{7-11}}{\ignorespaces Percentage of nodes having more cluster member than \textit {S$_{min}$} = 200}}{128}{figure.7.11}
+\contentsline {figure}{\numberline {{7-12}}{\ignorespaces Percentage of the number of rejoining nodes}}{130}{figure.7.12}
+\contentsline {figure}{\numberline {{7-13}}{\ignorespaces Average utility value}}{131}{figure.7.13}
+\contentsline {figure}{\numberline {{8-1}}{\ignorespaces Structure of On-Demand Resource Discovery and Selection Mechanism}}{136}{figure.8.1}
+\contentsline {figure}{\numberline {{8-2}}{\ignorespaces On-Demand Resource Discovery and Selection}}{138}{figure.8.2}
+\contentsline {figure}{\numberline {{8-3}}{\ignorespaces Modularization of the Machine Learning-based Runtime Scheduler}}{140}{figure.8.3}

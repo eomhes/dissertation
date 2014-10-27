@@ -1,0 +1,5 @@
+\contentsline {table}{\numberline {{3-1}}{\ignorespaces OpenCL API functionalities and extensions}}{39}{table.3.1}
+\contentsline {table}{\numberline {{4-1}}{\ignorespaces Average and standard deviation of network latency and bandwidth for local and wide area networks including Amazon EC2.}}{55}{table.4.1}
+\contentsline {table}{\numberline {{4-2}}{\ignorespaces Summary of input, output, and number of API calls for sobelfilter and matrix multiplication}}{59}{table.4.2}
+\contentsline {table}{\numberline {{4-3}}{\ignorespaces Summary of input, output, and number of API calls for hidden Markov model and N-body physics}}{60}{table.4.3}
+\contentsline {table}{\numberline {{7-1}}{\ignorespaces Simulation setup with various parameters setup}}{126}{table.7.1}

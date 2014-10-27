@@ -1,0 +1,95 @@
+\BOOKMARK [0][-]{chapter*.1}{ACKNOWLEDGMENTS}{}
+\BOOKMARK [0][-]{tableofcontents.0}{TABLE OF CONTENTS}{}
+\BOOKMARK [0][-]{chapter*.3}{LIST OF TABLES}{}
+\BOOKMARK [0][-]{chapter*.4}{LIST OF FIGURES}{}
+\BOOKMARK [0][-]{section*.5}{ABSTRACT}{}
+\BOOKMARK [0][-]{chapter.1}{1 INTRODUCTION}{}
+\BOOKMARK [1][-]{section.1.1}{1.1 Related Works on Remote Offloading Systems for Mobile Platforms}{chapter.1}
+\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Application Partitioning}{section.1.1}
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Thread Migration}{section.1.1}
+\BOOKMARK [2][-]{subsection.1.1.3}{1.1.3 Application Migration}{section.1.1}
+\BOOKMARK [2][-]{subsection.1.1.4}{1.1.4 Distributed Offloading Framework}{section.1.1}
+\BOOKMARK [2][-]{subsection.1.1.5}{1.1.5 Lack of Privacy and Trust}{section.1.1}
+\BOOKMARK [1][-]{section.1.2}{1.2 Motivation}{chapter.1}
+\BOOKMARK [1][-]{section.1.3}{1.3 Contributions}{chapter.1}
+\BOOKMARK [1][-]{section.1.4}{1.4 Outline}{chapter.1}
+\BOOKMARK [0][-]{chapter.2}{2 BACKGROUND}{}
+\BOOKMARK [1][-]{section.2.1}{2.1 Heterogeneous Computing}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{2.2 OpenCL}{chapter.2}
+\BOOKMARK [1][-]{section.2.3}{2.3 Secure Offloading with P2PVPN}{chapter.2}
+\BOOKMARK [1][-]{section.2.4}{2.4 IP Multicasting in Private Networks}{chapter.2}
+\BOOKMARK [0][-]{chapter.3}{3 OFFLOADING FRAMEWORK}{}
+\BOOKMARK [1][-]{section.3.1}{3.1 Motivation}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{3.2 The Structure of Remote Offloading Framework}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Transparent OpenCL API Extension}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Integration of OpenCL API with RPC Service}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Runtime Scheduler}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.4}{3.2.4 Decentralized Resource Discovery}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.5}{3.2.5 Trusted Communication via VPN}{section.3.2}
+\BOOKMARK [1][-]{section.3.3}{3.3 Evaluation}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Experimental Setup}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Overhead of Resource Discovery}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 Dynamic Resource Discovery}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.4}{3.3.4 Overhead of SocialVPN}{section.3.3}
+\BOOKMARK [1][-]{section.3.4}{3.4 Summary}{chapter.3}
+\BOOKMARK [0][-]{chapter.4}{4 WORKLOAD CHARACTERIZATION}{}
+\BOOKMARK [1][-]{section.4.1}{4.1 Related Works}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{4.2 Methodology}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Hardware Setup}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 OpenCL Workloads}{section.4.2}
+\BOOKMARK [1][-]{section.4.3}{4.3 Analysis}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Computation to Communication Ratio}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Offloading Performance}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Energy Consumption}{section.4.3}
+\BOOKMARK [1][-]{section.4.4}{4.4 Summary}{chapter.4}
+\BOOKMARK [0][-]{chapter.5}{5 MACHINE LEARNING-BASED RUNTIME SCHEDULER}{}
+\BOOKMARK [1][-]{section.5.1}{5.1 Related Works}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Adaptive Mobile Offloading}{section.5.1}
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Machine Learning Techniques for Dynamic Scheduling Problems}{section.5.1}
+\BOOKMARK [1][-]{section.5.2}{5.2 Challenge for Adaptive Scheduling for Remote Offloading Framework}{chapter.5}
+\BOOKMARK [1][-]{section.5.3}{5.3 Machine Learning-Based Runtime Scheduler}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Selection of Machine Learning Attributes}{section.5.3}
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Scheduling Accuracy of Machine Learning techniques}{section.5.3}
+\BOOKMARK [1][-]{section.5.4}{5.4 Performance Evaluation for Offline Scheduler}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Experimental Setup}{section.5.4}
+\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Performance Comparison}{section.5.4}
+\BOOKMARK [1][-]{section.5.5}{5.5 Online Runtime Scheduler}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.5.1}{5.5.1 Implementation of the Online Offloading Scheduler}{section.5.5}
+\BOOKMARK [2][-]{subsection.5.5.2}{5.5.2 Evaluation for the Online Offloading Scheduler}{section.5.5}
+\BOOKMARK [1][-]{section.5.6}{5.6 Summary}{chapter.5}
+\BOOKMARK [0][-]{chapter.6}{6 ONLINE TRAINING FOR MOBILE OFFLOADING SCHEDULER}{}
+\BOOKMARK [1][-]{section.6.1}{6.1 Background and Challenges}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 Offloading Performance}{section.6.1}
+\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 Offline vs. Online Training}{section.6.1}
+\BOOKMARK [1][-]{section.6.2}{6.2 Architecture of MALMOS}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Architecture and Modules of MALMOS}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Adaptive Online Training Mechanism}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 Integration with On-Demand Java-based Offloading Framework}{section.6.2}
+\BOOKMARK [1][-]{section.6.3}{6.3 Evaluation}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Experimental setup}{section.6.3}
+\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 Overhead of training anc classification}{section.6.3}
+\BOOKMARK [2][-]{subsection.6.3.3}{6.3.3 Scheduling Accuracy}{section.6.3}
+\BOOKMARK [1][-]{section.6.4}{6.4 Summary}{chapter.6}
+\BOOKMARK [0][-]{chapter.7}{7 INTEGRATION WITH PROXIMITY-AWARE CLUSTERING SYSTEM}{}
+\BOOKMARK [1][-]{section.7.1}{7.1 Motivation}{chapter.7}
+\BOOKMARK [1][-]{section.7.2}{7.2 Related Work}{chapter.7}
+\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 Clustering approaches on distributed systems}{section.7.2}
+\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 Utility functions in autonomous systems}{section.7.2}
+\BOOKMARK [1][-]{section.7.3}{7.3 System Model and Architecture}{chapter.7}
+\BOOKMARK [2][-]{subsection.7.3.1}{7.3.1 Structured P2P network as global overlay}{section.7.3}
+\BOOKMARK [2][-]{subsection.7.3.2}{7.3.2 Query propagation system}{section.7.3}
+\BOOKMARK [2][-]{subsection.7.3.3}{7.3.3 Network coordinate system}{section.7.3}
+\BOOKMARK [1][-]{section.7.4}{7.4 SOLARE Modules and Algorithms}{chapter.7}
+\BOOKMARK [2][-]{subsection.7.4.1}{7.4.1 Utility functions}{section.7.4}
+\BOOKMARK [2][-]{subsection.7.4.2}{7.4.2 Self-organizing and managing cluster process}{section.7.4}
+\BOOKMARK [1][-]{section.7.5}{7.5 Performance Evaluation}{chapter.7}
+\BOOKMARK [2][-]{subsection.7.5.1}{7.5.1 Inter-cluster latencies}{section.7.5}
+\BOOKMARK [2][-]{subsection.7.5.2}{7.5.2 The number of cluster members}{section.7.5}
+\BOOKMARK [2][-]{subsection.7.5.3}{7.5.3 Adaptability to dynamic network conditions}{section.7.5}
+\BOOKMARK [1][-]{section.7.6}{7.6 Possible Integration with Mobile Offloading Framework}{chapter.7}
+\BOOKMARK [1][-]{section.7.7}{7.7 Summary}{chapter.7}
+\BOOKMARK [0][-]{chapter.8}{8 SUMMARY AND FUTURE WORK}{}
+\BOOKMARK [1][-]{section.8.1}{8.1 On-Demand Resource Discovery and Selection}{chapter.8}
+\BOOKMARK [1][-]{section.8.2}{8.2 Performance Characterization of ML-based Runtime Schedulers}{chapter.8}
+\BOOKMARK [0][-]{chapter*.6}{REFERENCES}{}
+\BOOKMARK [0][-]{chapter*.7}{BIOGRAPHICAL SKETCH}{}

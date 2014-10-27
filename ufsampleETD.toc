@@ -1,0 +1,95 @@
+\contentsline {extrachapter}{ACKNOWLEDGMENTS}{4}{chapter*.1}
+\contentsline {extrachapter}{LIST OF TABLES}{8}{chapter*.3}
+\contentsline {extrachapter}{LIST OF FIGURES}{9}{chapter*.4}
+\contentsline {extrachapter}{ABSTRACT}{12}{section*.5}
+\addvspace {10pt}\noindent {CHAPTER}\hfill \par 
+\contentsline {chapter}{\numberline {1}{INTRODUCTION}}{14}{chapter.1}
+\contentsline {section}{\numberline {1.1}Related Works on Remote Offloading Systems for Mobile Platforms}{19}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Application Partitioning}{19}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Thread Migration}{20}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Application Migration}{20}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}Distributed Offloading Framework}{21}{subsection.1.1.4}
+\contentsline {subsection}{\numberline {1.1.5}Lack of Privacy and Trust}{22}{subsection.1.1.5}
+\contentsline {section}{\numberline {1.2}Motivation}{23}{section.1.2}
+\contentsline {section}{\numberline {1.3}Contributions}{25}{section.1.3}
+\contentsline {section}{\numberline {1.4}Outline}{27}{section.1.4}
+\contentsline {chapter}{\numberline {2}{BACKGROUND}}{28}{chapter.2}
+\contentsline {section}{\numberline {2.1}Heterogeneous Computing}{28}{section.2.1}
+\contentsline {section}{\numberline {2.2}OpenCL}{30}{section.2.2}
+\contentsline {section}{\numberline {2.3}Secure Offloading with P2PVPN}{30}{section.2.3}
+\contentsline {section}{\numberline {2.4}IP Multicasting in Private Networks}{31}{section.2.4}
+\contentsline {chapter}{\numberline {3}{OFFLOADING FRAMEWORK}}{33}{chapter.3}
+\contentsline {section}{\numberline {3.1}Motivation}{33}{section.3.1}
+\contentsline {section}{\numberline {3.2}The Structure of Remote Offloading Framework}{35}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Transparent OpenCL API Extension}{36}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Integration of OpenCL API with RPC Service}{40}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Runtime Scheduler}{41}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Decentralized Resource Discovery}{42}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Trusted Communication via VPN}{44}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Evaluation}{45}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Experimental Setup}{45}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Overhead of Resource Discovery}{46}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Dynamic Resource Discovery}{47}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Overhead of SocialVPN}{49}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}Summary}{50}{section.3.4}
+\contentsline {chapter}{\numberline {4}{WORKLOAD CHARACTERIZATION}}{52}{chapter.4}
+\contentsline {section}{\numberline {4.1}Related Works}{53}{section.4.1}
+\contentsline {section}{\numberline {4.2}Methodology}{54}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Hardware Setup}{54}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}OpenCL Workloads}{55}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Analysis}{57}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Computation to Communication Ratio}{61}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Offloading Performance}{61}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Energy Consumption}{66}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Summary}{69}{section.4.4}
+\contentsline {chapter}{\numberline {5}{MACHINE LEARNING-BASED RUNTIME SCHEDULER}}{70}{chapter.5}
+\contentsline {section}{\numberline {5.1}Related Works}{71}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Adaptive Mobile Offloading}{71}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Machine Learning Techniques for Dynamic Scheduling Problems}{73}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Challenge for Adaptive Scheduling for Remote Offloading Framework}{74}{section.5.2}
+\contentsline {section}{\numberline {5.3}Machine Learning-Based Runtime Scheduler}{77}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Selection of Machine Learning Attributes}{78}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Scheduling Accuracy of Machine Learning techniques}{80}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Performance Evaluation for Offline Scheduler}{82}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Experimental Setup}{82}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Performance Comparison}{83}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Online Runtime Scheduler}{86}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Implementation of the Online Offloading Scheduler}{86}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Evaluation for the Online Offloading Scheduler}{88}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Summary}{89}{section.5.6}
+\contentsline {chapter}{\numberline {6}{ONLINE TRAINING FOR MOBILE OFFLOADING SCHEDULER}}{91}{chapter.6}
+\contentsline {section}{\numberline {6.1}Background and Challenges}{93}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Offloading Performance}{93}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Offline vs. Online Training}{94}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Architecture of MALMOS}{95}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Architecture and Modules of MALMOS}{96}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Adaptive Online Training Mechanism}{99}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Integration with On-Demand Java-based Offloading Framework}{101}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Evaluation}{102}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Experimental setup}{102}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Overhead of training anc classification}{104}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Scheduling Accuracy}{105}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Summary}{111}{section.6.4}
+\contentsline {chapter}{\numberline {7}{INTEGRATION WITH PROXIMITY-AWARE CLUSTERING SYSTEM}}{112}{chapter.7}
+\contentsline {section}{\numberline {7.1}Motivation}{112}{section.7.1}
+\contentsline {section}{\numberline {7.2}Related Work}{114}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Clustering approaches on distributed systems}{114}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Utility functions in autonomous systems}{115}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}System Model and Architecture}{115}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Structured P2P network as global overlay}{116}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Query propagation system}{117}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Network coordinate system}{118}{subsection.7.3.3}
+\contentsline {section}{\numberline {7.4}SOLARE Modules and Algorithms}{119}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Utility functions}{119}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Self-organizing and managing cluster process}{121}{subsection.7.4.2}
+\contentsline {section}{\numberline {7.5}Performance Evaluation}{123}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Inter-cluster latencies}{125}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}The number of cluster members}{128}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.3}Adaptability to dynamic network conditions}{129}{subsection.7.5.3}
+\contentsline {section}{\numberline {7.6}Possible Integration with Mobile Offloading Framework}{131}{section.7.6}
+\contentsline {section}{\numberline {7.7}Summary}{131}{section.7.7}
+\contentsline {chapter}{\numberline {8}{SUMMARY AND FUTURE WORK}}{133}{chapter.8}
+\contentsline {section}{\numberline {8.1}On-Demand Resource Discovery and Selection}{136}{section.8.1}
+\contentsline {section}{\numberline {8.2}Performance Characterization of ML-based Runtime Schedulers}{139}{section.8.2}
+\contentsline {extrachapter}{REFERENCES}{143}{chapter*.6}
+\contentsline {extrachapter}{BIOGRAPHICAL SKETCH}{152}{chapter*.7}

@@ -1,0 +1,241 @@
+\chapter{BACKGROUND}
+\label{chap:background}
+This proposal brings together various technologies synergetically thus
+us to reuse various existing tools.
+%
+By combining a heterogeneous computing framework, virtual private
+networking, and IP multicasting, I propose a solution that is based on
+well accepted academic and industry standard.
+%
+In this section, I elaborate on some of these current standards and
+their impact on the proposed design.
+%
+\section{Heterogeneous Computing}
+\label{back:heterogeneous}
+An increasing number of hardware platforms are incorporating
+heterogeneity for both energy and performance improvement.
+%
+Therefore,  it has been seen that primary host CPU cores are assisted by
+various computing units for specialized functions offloading.
+%
+These specialized accelerators are aimed at speeding up specific
+portions of the application code and differ from the general purpose
+processor architectures.
+%
+In this subsection, I explain some of the different types of
+heterogeneous platforms available nowadays.\\
+%
+{\bf Heterogeneous multi-core CPU combinations.}
+In this design, high performing CPU cores are integrated with low
+performing energy efficient cores.
+%
+Currently, some mobile and server platforms employ this
+architecture~\cite{atom}.
+%
+The goal is to match the application execution requirements to the
+smallest available core that can achieve the execution within required
+performance limitations with lowest energy consumption.
+%
+In other cases, one big processor is utilized for controlling the
+scheduler of multiple smaller cores~\cite{nvidia}.
+%
+Previous works have suggested that this combination can reduce energy
+consumption by 39\%~\cite{kumar}.\\
+%
+{\bf CPU-GPU combinations.}
+These platforms aim to accelerate graphics performance by including
+specialized hardware to execute graphics functions.
+%
+The Graphics Processor Units (GPUs) consist of multiple execution units
+and local memory that can efficiently process data and task parallel
+instruction streams at a very high throughput.
+%
+This architectural property also make GPUs good candidates for executing
+non-graphical functions that can exploit the data and task parallelism
+at a large scale leading to evolution of a rich General-Purpose
+computing on Graphics Processing Units (GPGPU) based offloading
+frameworks.\\
+{\bf Hardware accelerators.}
+Increasingly specialized hardware accelerators are being integrated on
+different platforms to provide faster execution times for
+domain-specific application bottleneck functions.
+%
+The accelerators range from fixed function units to customizable and
+programmable hardware (e.g. FPGAs).
+%
+In conjunction with the processor cores, the specialized hardware
+accelerators assist in making the targeted applications perform better
+by taking care of the functions that use a majority of core cycles.
+%
+This model makes accelerator integration a natural choice for platforms
+that target specific usages and/or operate under real-time and power
+constraints.\\
+%
+{\bf Remote offloading.}
+%One of the contribution in this dissertation is to extend the definition
+%of heterogeneity to include a new kind of platform component -- the
+%execution units on remote resources.
+%
+With the advent of mobile era, remote execution to remote resources has
+been one of the most common solutions to achieve better application
+performance.
+%
+Due to the compute, memory and power limitations on mobile devices, most
+of the applications divide their execution between the portions of local
+processing and remote execution handling much of the complex and heavy
+task.\\
+%
+%The proposed architecture aims to extend this model by providing mobile
+%applications with the flexibility of using remote resources through a
+%well-defined framework, namely OpenCL.
+%
+In this dissertation, one of the contributions is to extend the scope
+of heterogeneity to include a new kind of platform component -- the
+compute units on remote devices located in the private or public clouds.
+%
+Therefore, the proposed multi-layer framework allows for application to
+discovery, enumerate, and use the remote devices as if they were local
+devices.
+%
+The framework has the advantage of not only speeding application
+execution times and saving mobile device energy consumption but also
+allows for the construction of a virtual dynamic platform with tight
+integration of heterogeneous components both on and off the host
+platform.
+%
+\section{OpenCL}
+\label{back:opencl}
+%
+Currently, OpenCL (Open Compute Language) is the most well-known
+framework for offloading tasks to different compute units within a
+heterogeneous host platform.
+%
+This framework provides an APIs which make it possible for application
+developers to dispatch kernels for execution.
+%
+It is supported by the top chip makers such as Intel, NVIDIA, AMD and
+ARM Holdings.
+%
+At the moment, OpenCL is used in the scientific computing arena as means
+to leverage GPUs for high-throughput computations.
+%
+I implement the proposed design as a subsystem of the OpenCL framework.
+%
+The extension makes it possible for the OpenCL framework to discover
+accelerators located on remote resources across the network.
+%
+Once these remote OpenCL devices are discovered, the application
+developers is able to use the same interface to transparently offload a
+kernel as if it was a part of the local platform.
+%
+\section{Secure Offloading with P2PVPN}
+\label{back:p2pvpn}
+Previous works have not focused on dealing with the privacy implications
+of offloading mobile computation to the cloud for remote execution.
+%
+One solution can be to use socket layer encryption such as SSL/TLS when
+sending data to the cloud, but the encryption overhead has not been
+studied in past research.
+%
+As privacy concerns in mobile devices grow, this dissertation
+recognizes that a robust mechanism to ensure privacy is a fundamental
+requirement.
+%
+To address the privacy issue, the proposed design integrates a social
+peer-to-peer virtual private network (SocialVPN~\cite{socialvpn}).
+%
+SocialVPN automatically discovers social peers on the Internet and
+creates a private network consisting solely of these trusted peers.
+%
+It also handles the cumbersome task of cryptographic key management in a
+distributed fashion thus enabling a robust, secure communication layer
+with no single point of failure.
+%
+By emulating a virtual LAN, peers have private IP addresses to each
+other allowing them to freely communicate even if they are both behind
+network address translators (NAT) and certain firewalls.
+%
+Hung et al.~\cite{hung} suggested using a centralized VPN to ensure data
+privacy.
+%
+Centralized VPNs (e.g. OpenVPN, Cisco VPN, L2TP) typically function by
+allowing the VPN client to connect to a VPN gateway, which forwards UP
+requests to the internal private network on behalf of the clients.
+%
+This model does not guarantee any privacy between the gateway and the
+destination machine because it does not provide end-to-end encryption.
+%
+This is exacerbated in a public cloud where you have different and
+unknown organizations sharing the same private network.
+%
+This lack of IP level data privacy is a primary reason that many
+organizations are hesitant to run their private workloads in the public
+clouds\cite{brodkin}.
+%
+SocialVPN addresses this issue by enforcing encrypted end-to-end
+communication.\\
+%
+The other important aspect of SocialVPN is that it gives the user
+complete control over their virtual private network.
+%
+A user can create a virtual network consisting only of his/her own
+personal computing devices.
+%
+For example, Alice can create a VPN consisting of only 4 nodes: her
+mobile phone, her laptop, her workstation at the office, and a VM
+instance running on Amazon EC2.
+%
+Alice can also expand the VPN to include her family members, and closest
+friends or scale it down dynamically.
+%
+If Alice only trusts her own personal resources, she simply limits her
+VPN to allow connectivity to her machines, and the framework will only
+have private UP connectivity to her nodes thereby making them the only
+candidates for remote offloading.
+%
+If she wants to access to more resources, she can allow private IP
+access to nodes belonging to her trusted friends and family, hence
+enabling the framework to utilize them  as compute endpoints.
+%
+The assumption here is that all of these nodes will be running SocialVPN
+software stack along with an OpenCL RPC-service to support the remote
+execution.
+%
+\section{IP Multicasting in Private Networks}
+\label{back:ipmulticast}
+The Internet protocol does support multicasting; however, routers
+usually block multicast traffic; hence multicasting is widely used for
+decentralized service discovery within private networks.
+%
+For example, most network printers support local network discovery
+through well-known standards such as Bonjour~\cite{bonjour}, or
+Universal Plug and Play (UPnP).
+%
+Hence, all modern operating systems as well as smart appliances (i.e.
+TVs, NAS boxes) rely on these IP multicast-based services mechanisms to
+discover and communicate with each other.
+%
+Through integration with SocialVPN, the proposed offloading framework is
+able to reues these IP multicasting techniques as the foundation for the
+service discovery system and allow it to span across wide area networks.
+%
+With this decentralized approach, it is no longer necessary to register
+services in a centralized directory.
+%
+When the mobile device decides to offload some computation, it sends an
+IP multicast query over the network, SocialVPN automatically handles
+this packet and sends it to all trusted peers in the private network.
+%
+Eligible peers are therefore able to advertise themselves to the
+requestor.
+%
+This enables dynamic service discovery without having to hardcoded
+endpoints in configuration files or depend on a directory service.
+%
+IP multicast support in SocialVPN enables us to follow the same
+decentralized services discovery techniques that are widely used in the
+private networks for network printers, DNLA compatible devices (e.g. TVs)
+and storage boxes.
+%
+
+

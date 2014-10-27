@@ -1,0 +1,156 @@
+\begin{abstract}
+%Mobile computing is becoming the preferred method of personal computing
+%environment for millions of users.
+%
+%Furthermore, the growth of the mobile device market has been inspired by the
+%hundreds of thousands of mobile applications such as social networking,
+%location-based services, image processing, augmented reality, and
+%face/speech recognition.
+%
+%In order to meet the increasing demands of these computationally-intense
+%applications, recent mobile platforms have been augmented with multi-core CPUs,
+%more powerful GPUs and other special types of hardware accelerators.
+%
+%Despite of these enhancements to mobile platform's hardware,
+%however, the inescapable fact is that their limited capacities of the
+%batteries will always serve as a bottleneck while hindering the mobile
+%platforms from utilizing their computing capabilities.\\
+%
+%To address this restriction, there have been research efforts on remote
+%offloading systems which seek intelligent ways to enable mobile
+%platform developers to leverage computing capabilities of more powerful
+%resources over the network. 
+%
+%Even though existing approaches provide core mechanisms to transform
+%typical mobile applications to offloading-enabled applications through
+%various granularities of partitioning and/or migration, they still lack
+%considerations for service discovery mechanisms while assuming the
+%availability of remote computing nodes with static endpoints.
+%
+%Moreover, they have not investigated data privacy and secure
+%communication between the mobile client and remote resources, which can
+%be a crucial flaw for mobile computing environments.\\
+%
+%This dissertation presents a novel framework which enables remote workload
+%offloading to external resources within a mobile user's Social Device
+%Network in which trusted remote computing resources such as family
+%or friend's desktops or laptops are aggregated regardless of the user's
+%mobility.
+%
+%The proposed system accomplishes this by 1) utilizing a peer-to-peer
+%virtual private networking technique as a substrate for the discovery
+%and configuration of trusted remote resources, and 2) extending OpenCL
+%framework, which is an open standard of parallel programming for
+%heterogeneous computing environments, to support remote offloading using
+%the TCP/IP networking stack. 
+%
+%This work thus broadens the range of heterogeneous
+%computing to remote computing capabilities in the network, where
+%offloading servers and services are dynamically discovered.\\
+%
+%The prototype implementation of the proposed framework is evaluated,
+%with regard to end-to-end application performance and energy
+%consumption in mobile devices, through a variety of network
+%configurations representing local and wide area network, and various
+%levels of remote computing capabilities such as typical CPUs, GPUs as
+%well as Amazon EC2 instances.
+%
+%According to the evaluation, the proposed architecture achieves more
+%energy efficient performance by offloading than executing locally
+%depending on the characteristics of mobile workloads and network
+%conditions.\\
+%
+%Based on the evaluation results, mobile workloads are characterized for
+%the suitability of offloading from the perspective of computation to
+%communication ratio which is a comprehensive measurement mirroring
+%network conditions and workload characteristics.
+%
+%In addition, this dissertation proposes applying machine learning
+%techniques to runtime schedulers for mobile offloading framework.
+%
+%By adopting machine learning techniques to remote offloading
+%scheduling problems, a scheduler can be automatically trained from
+%previous offloading performance and make decisions on whether mobile
+%workloads should be offloaded or executed locally according to past
+%behaviors and current conditions.
+%
+%While running various machine learning algorithms, the evaluation shows the
+%feasibility of adopting machine learning techniques into scheduling
+%problems for mobile offloading framework.\\
+%
+%As the future work, the current resource discovery technique will be 
+%further extended into the consideration of keeping track of a more 
+%complex set of conditions of multiple remote computing resources such 
+%as network latency, bandwidth, and computing capabilities of remote 
+%resources, and the provision of the most appropriate resource in 
+%accordance with network conditions and mobile application requirements.
+%
+%Also, the machine learning-based runtime scheduler will be modularized
+%so that it provides well-defined APIs, and the proposed runtime scheduler
+%can be plugged and played for various types of adaptive scheduling
+%problems.
+%
+%In doing so, it is possible to characterize the performance, benefits,
+%and overhead of different types of machine learning algorithms in online
+%schedulers for mobile offloading frameworks.
+%
+%As part of the modularization of the machine learning-based runtime
+%scheduler, I am currently working on the online scheduler for Java-based
+%on-demand code offloading system.
+%
+Mobile computing is becoming the preferred method of personal computing
+environments for millions of users.
+%
+In order to meet the increasing demands of computationally-intensive
+applications, recent mobile platforms have been augmented with
+multi-core CPUs, powerful GPUs, and special types of hardware
+accelerators.
+%
+Despite of these enhancements to hardware of mobile platforms, however,
+their limited capacities of the batteries will always act as a
+bottleneck while hindering mobile platforms from utilizing their
+computing capabilities.\\
+%
+To address this restriction, there have been research efforts on remote
+offloading systems which seek for intelligent ways to enable mobile
+platforms to leverage computing capabilities of more powerful resources
+over the network.
+%
+Even though existing approaches provide core mechanisms to transform
+typical mobile applications to offloading-enabled applications, they
+still lack considerations for service discovery mechanisms while
+assuming the availability of remote computing nodes with static
+endpoints.
+%
+Moreover, they have not investigated data privacy and secure
+communication between the mobile client and remote resources, which can
+be a crucial flaw for mobile environments.\\
+%
+This dissertation presents a novel framework which enables remote
+workload offloading to external resources within a virtual private
+network of the mobile user in which trusted remote computing resources
+are aggregated regardless of user mobility.
+%
+The proposed system accomplishes this by utilizing a peer-to-peer
+virtual private networking technique as a substrate for the discovery
+and configuration of trusted remote resources, and extending OpenCL
+framework, which is an open standard of parallel programming for
+heterogeneous computing environments, to support remote offloading using
+the TCP/IP networking stack.
+%
+Based upon the evaluation on the performance of the proposed offloading
+framework, various mobile workloads are characterized for the
+suitability of offloading from the perspective of computation to
+communication ratio which is a comprehensive measurement mirroring
+network conditions and workload characteristics.\\
+%
+In addition, this dissertation proposes applying machine learning
+techniques to runtime schedulers for mobile offloading frameworks.
+%
+By adopting machine learning techniques to remote offloading scheduling
+problems, the scheduler can learn the offloading effectiveness from
+previous offloading experiences automatically and make decisions on
+whether mobile workloads should be offloaded or executed locally
+according to the current conditions at runtime.
+%
+\end{abstract}
