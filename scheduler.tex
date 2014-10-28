@@ -239,8 +239,8 @@ OpenCL-based remote offloading framework subject to various network
 configurations and collect measurements to show the performance
 disparity between different network configurations.\\
 %
-In the experiments, I utilized an Android TabletPC equipped with
-1GHz dual-core processor and 1GB RAM as a mobile client.
+In the experiments, I utilized an Android tabletPC equipped with
+1Ghz dual-core processor and 1GB RAM as a mobile client.
 %
 In order to observe the impact of different network
 conditions on the offloading performance, I deployed a remote server
@@ -268,9 +268,9 @@ section~\ref{character:setup} summarizes the average and standard deviation of l
 and bandwidth of the network configurations that I setup for the
 experiments.\\
 %
-The benchmarks used in the experiment are Sobelfilter, floating-point
+The benchmarks used in the experiment are sobelfilter, floating-point
 matrix multiplication, Hidden Markov Model, and \textit{N}-body physics
-provided by AMD APP SDK~\cite{amd} and Nvidia~\cite{nvidia} sample code.
+provided by AMD APP SDK~\cite{amd} and NVIDIA~\cite{nvidia} sample code.
 %
 These execution kernels are used by a variety of applications in areas such as image
 processing, physics simulation, and mathematical modeling.\\
@@ -296,7 +296,7 @@ execution time compared to the case of local processing according to
 the data size and network configurations for four OpenCL execution
 kernels.
 %
-As shown in Figure~\ref{fig:challenge_network}, for Sobelfilter, I observed that different
+As shown in Figure~\ref{fig:challenge_network}, for sobelfilter, I observed that different
 network conditions result in significantly different offloading
 performance.
 %
@@ -312,7 +312,7 @@ workloads due to different computational requirements of workloads
 even though they process or offload the similar size of data ranging 
 from 3.49MB to 3.74MB.
 %
-For Sobelfilter, offloading to the GPU server located in LAN is only
+For sobelfilter, offloading to the GPU server located in LAN is only
 more beneficial than local processing.
 %
 On the other hand, offloading floating-point matrix multiplication has
@@ -321,7 +321,7 @@ heavier computational requirement of floating-point matrix
 multiplication.
 %
 In fact, the computation complexity for floating-point matrix
-multiplication is {\it O}($n^{3}$) while that for Sobelfilter is
+multiplication is {\it O}($n^{3}$) while that for sobelfilter is
 {\it O}($n^{2}$).\\
 %
 It is also worth noting that, for Hidden Markov Model, offloading to 
@@ -498,7 +498,7 @@ algorithms}
 Then I labeled each data instance by comparing offloading 
 performance to the local execution in terms of the execution time.
 %
-For example, if offloading Sobelfilter with a 1920$\times$1080 image
+For example, if offloading sobelfilter with a 1920$\times$1080 image
 into a machine with a GPU in LAN takes a shorter time than
 local processing, the instance is labeled as \textit{offload}.
 %
@@ -725,13 +725,13 @@ scheduling accuracy.
 For energy consumption, moreover, the Instance-Based Learning scheduler has
 a fairly small penalty compared with Rule-Based Learning scheduler.
 %  
-Note that, for Sobelfilter, the penalty in terms of both the execution
+Note that, for sobelfilter, the penalty in terms of both the execution
 time and energy consumption is lower than other execution kernels,
 because the gap of the execution time and energy consumption for
-Sobelfilter between offloading and the local execution is relatively
+sobelfilter between offloading and the local execution is relatively
 small.
 %
-Therefore, the penalty for Sobelfilter is less significant than the
+Therefore, the penalty for sobelfilter is less significant than the
 cases of other execution kernels when the scheduler makes a wrong
 decision on offloading or the local execution.
 %
@@ -847,7 +847,7 @@ In this experiment, the client and the remote server are directly
 connected through a wireless router and I controlled the network
 bandwidth between them using TC.
 %
-Also, I used Sobelfilter for the offloaded execution kernel.
+Also, I used sobelfilter for the offloaded execution kernel.
 %
 Figure~\ref{fig:online} shows the ability to adapt the online scheduler to dynamic
 network conditions.\\
