@@ -221,7 +221,7 @@ an existing Java-based, offloading-capable code refactoring framework.\\
 Lastly, I introduce SOLARE, a peer-to-peer, utility functions based
 self-organizing network latency-aware clustering system which can lead
 to a possible performance improvement in conjunction with mobile
-offloading framework.
+offloading frameworks.
 %
 In SOLARE, each node searches and joins the highest utility valued
 cluster, and periodically monitors the status of the clsuter that it is
@@ -232,7 +232,7 @@ For this work, I select the distance between a virtual center of the
 cluster and the coordinate of each node and the size of the cluster
 (i.e. the number of current cluster members) as utility properties.
 %
-Event though mobile devices do not directly participate the SOLARE
+Event though mobile devices do not directly participate in the SOLARE
 clustering process such as searching, joining, monitoring, and creating
 a cluster, it is possible that mobile devices assisted by SOLARE
 are able to achieve an additional offloading performance improvement by
@@ -620,7 +620,16 @@ offloading framework is presented as a third contribution.
 %
 By taking the algorithm complexity and scheduling performance into
 account, a few machine learning algorithms are selected to implement
-on/offline runtime schedulers for mobile offloading framework.\\
+offline runtime schedulers for mobile offloading framework.
+%
+Futhermore, I extend the offline machine learning-based runtime
+scheduler to the mobile offloading scheduler with online machine
+learning techniques.
+%
+This extension provides an online training mechanism for the machine
+learning-based runtime scheduler such that it supports a policy that
+dynamically adapts scheduling decisions at runtime based upon the
+observation of previous offloading decision and their correctness.\\
 %
 The prototype implementation of the proposed framework is evaluated,
 with regard to end-to-end application performance and energy consumption
