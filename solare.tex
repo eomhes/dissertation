@@ -1,11 +1,55 @@
-\chapter{INTEGRATION WITH PROXIMITY-AWARE CLUSTERING SYSTEM}
+\chapter{COLLABORATION WITH PROXIMITY-AWARE CLUSTERING SYSTEM}
 \label{chap:solare}
-In this Chapter, I explain a possible performance improvement of mobile
-offloading frameworks by introducing a proximity-aware clustering system,
-called SOLARE (self-organizing latency-aware resource ensemble).
+In this Chapter, I introduce SOLARE, a utility functions based
+self-organizing network proximity-aware clustering system which can
+lead to a possible performance improvement in conjunction with mobile
+offloading frameworks.
 %
-
-\section{Motivation}
+As mentioned in Chapter~\ref{chap:scheduler} and~\ref{chap:online},
+network performance such as latency and bandwidth has a significant
+impact on the offloading performance, I believe that SOLARE is able to
+achieve an additional performance improvement because of its ability to
+organize clusters among peers which have similar network performance. 
+%
+However, as I will describe in this Chapter, SOLARE is the self-organizing and
+managing clustering system utilizing a peer-to-peer overlay network as
+an underlying substrate to place SOLARE nodes in a synthetic network
+coordinate space and to propagate query messages for searching, joining,
+and creating appropriate clusters.
+%
+Therefore, in order for mobile devices to participate directly in the SOLARE
+clustering process as an overlay peer, they are required to implement basic 
+functionalities of the peer-to-peer overlay networks such as
+bootstrapping overlay, maintaining communication channels (i.e. near and
+shortcut connections), and propagating messages from other peers, which incur an
+additional overhead in terms of energy consumption and processing cost
+for mobile platforms.
+%
+Nevertheless, there still exist ways for mobile devices to collaborate with
+the network proximity-aware clustering system to improve the offloading
+performance without performing the functionalities of the peer-to-peer
+overlay networks. 
+%
+One possible collaboration of remote computation offloading with SOLARE
+is a seamless service migration to another peer in a same cluster.
+%
+For example, in the case where a remote resource, which currently
+provides computing capabilities for mobile computation offloading,
+becomes not available due to resource crashes or network problem, the
+offloading service should be migrated to another remote resource.
+%
+If the mobile device keeps a list of remote resources which guarantee
+similar network performance in terms of latency or bandwidth (i.e.
+remote resources having the same cluster membership) and seamlessly
+hopping into another remote resource in the same cluster, the offloading
+service is able to continue without any service disconnection or restart.
+%
+Thus, with the assist from SOLARE, mobile offloading frameworks do not
+have to repeat the service discovery process to find another remote
+resource which has the best network performance and the offloading
+service can resume seamlessly.
+%
+\section{Motivation of SOLARE}
 \label{solare:motivation}
 In recent years, the structures of large-scale network have been
 extended from client-server architectures for traditional web services
@@ -43,10 +87,9 @@ With the approach described in this Chapter, proximity-aware queries can
 be efficiently performed through scalable P2P queries within the
 self-organized cluster(s) that a node belongs to.\\
 %
-In this Chapter, I propose SOLARE, a peer-to-peer, utility function
-based self-managing system that self-organizes clusters in a
-proximity-aware structured overlay topology and potentially improves the
-offloading performance in conjunction with mobile offloading frameworks.
+SOLARE is a peer-to-peer, utility function based self-managing system
+that self-organizes clusters in a proximity-aware structured overlay
+topology.
 %
 To do this, I rely on a structured P2P network as underlying global
 overlay network and a self-organizing, decentralized network coordinate
@@ -889,14 +932,16 @@ than \textit{S$_{min}$}.
 Consequently, it results in the lowest utility value for cluster size
 and total average utility value.
 %
-
-\section{Possible Integration with Mobile Offloading Framework}
-\label{solare:integration}
-
+%
+%\section{Possible Integration with Mobile Offloading Framework}
+%\label{solare:integration}
+%
 
 \section{Summary}
 \label{solare:summary}
-In this Chapter, I introduced SOLARE to provide a proximity-aware
+In this Chapter, I introduced SOLARE which can collaborate with remote
+computation offloading
+to provide a proximity-aware
 topology by showing the ability to self-organize and self-manage the
 clustering system.
 %
