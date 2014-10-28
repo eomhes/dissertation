@@ -939,20 +939,37 @@ and total average utility value.
 
 \section{Summary}
 \label{solare:summary}
-In this Chapter, I introduced SOLARE which can collaborate with remote
-computation offloading
-to provide a proximity-aware
-topology by showing the ability to self-organize and self-manage the
-clustering system.
+In this Chapter, I introduced SOLARE, a peer-to-peer, utility based
+self-organizing clustering system which is able to collaborate with
+remote computation offloading to achieve the additional offloading
+performance improvement.
 %
-All participants compute themselves the utility for existing clusters
+Since the main goal of SOLARE is to organize a proximity-aware
+clustering topology, it is possible to provide 
+%
+In SOLARE, all participants compute themselves the utility for existing clusters
 and join highest utility valued cluster.
 %
 On the other hand, if there is no cluster whose utility is greater than
 the user-defined threshold, nodes create a new cluster declaring their
 own coordinate as the virtual center of cluster.
-
-
-
-
-
+%
+To establish utility functions, I select the distance to cluster and the
+size of cluster as utility properties.
+%
+Furthermore, the clustering system provides the adaptability for dynamic
+network status while each node monitors the cluster that it is currently
+joining.
+%
+After describing the self-organizing and managing clustering procedure,
+I evaluated its performance in terms of latencies of intra cluster and
+the number of cluster members.
+%
+Based on the evaluation, I confirmed that setting of parameters, which
+form utility functions, can control the properties of clusters such as
+latencies of intra cluster and the population of clusters.
+%
+Additionally, by measuring the percentage of the number of nodes which
+need to migrate into another cluster and average utility value, I
+presented the adaptability of the system.
+%
