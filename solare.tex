@@ -932,10 +932,8 @@ than \textit{S$_{min}$}.
 Consequently, it results in the lowest utility value for cluster size
 and total average utility value.
 %
-%
 %\section{Possible Integration with Mobile Offloading Framework}
 %\label{solare:integration}
-%
 
 \section{Summary}
 \label{solare:summary}
@@ -945,7 +943,9 @@ remote computation offloading to achieve the additional offloading
 performance improvement.
 %
 Since the main goal of SOLARE is to organize a proximity-aware
-clustering topology, it is possible to provide 
+clustering topology, it is possible to provide mobile offloading
+framework with more resilient resource discovery service by supplying a
+list of remote resources which have similar network performance. 
 %
 In SOLARE, all participants compute themselves the utility for existing clusters
 and join highest utility valued cluster.
@@ -962,12 +962,12 @@ network status while each node monitors the cluster that it is currently
 joining.
 %
 After describing the self-organizing and managing clustering procedure,
-I evaluated its performance in terms of latencies of intra cluster and
+I evaluated its performance in terms of latencies of intra-cluster and
 the number of cluster members.
 %
 Based on the evaluation, I confirmed that setting of parameters, which
 form utility functions, can control the properties of clusters such as
-latencies of intra cluster and the population of clusters.
+latencies of intra-cluster and the population of clusters.
 %
 Additionally, by measuring the percentage of the number of nodes which
 need to migrate into another cluster and average utility value, I
