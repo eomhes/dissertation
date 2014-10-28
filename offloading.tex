@@ -237,7 +237,7 @@ memory to the mobile device's memory over the network.
 Also, it is possible to perform data compression at the networking layer
 to minimize the networking overhead and energy consumption.\\
 %
-{\bf Resouce and failure management.} The final phase of the OpenCL API
+{\bf Resource and failure management.} The final phase of the OpenCL API
 is the ability to discover errors and release its state and resources in
 a graceful manner.
 %
@@ -255,7 +255,7 @@ Once again, I extend this functionality to support network failures as
 well.
 %
 In the case of a disconnection, the appropriate error code is returned
-ro the developer who then performs the necessary actions to clean up the
+to the developer who then performs the necessary actions to clean up the
 state belonging to the job.
 %
 On the server, the necessary clean-up is taken as well by the
@@ -348,7 +348,7 @@ resulting in poor battery performance.\\
 \begin{figure}
 \centering
 \epsfig{file=figs/code_rpc.eps, width=4.0in}
-\caption{Code snippet for tntegration of OpenCL API with RPC}
+\caption{Code snippet for integration of OpenCL API with RPC}
 \label{fig:code_rpc}
 \end{figure}
 %
@@ -452,7 +452,7 @@ provides more flexible ability of on-demand resource selection.
 \label{fig:discovery}
 \end{figure}
 %
-Current mobile offloading solutions rely on a centralized service ot
+Current mobile offloading solutions rely on a centralized service to
 provide the resource discovery capability.
 %
 A key differentiation of my approach is the decentralized IP
@@ -529,7 +529,7 @@ tunneling leveraging a peer-to-peer overlay.
 %
 By leveraging SocialVPN as a trusted peer-to-peer messaging substrate,
 it is possible to use the Berkeley sockets networking interface to
-offload the mobile workloads without any direct linking to SocialVPn
+offload the mobile workloads without any direct linking to SocialVPN
 itself.
 %
 Most peer-to-peer systems require integration with a peer-to-peer
@@ -582,7 +582,7 @@ different computing capabilities and network performance.\\
 %
 For offloaded OpenCL workloads, I utilized OpenCL SDK code samples
 provided by AMD SDK~\cite{amd} and NVIDIA~\cite{nvidia} such as
-Sobelfilter, matrix multiplication, N-body physics,
+sobelfilter, matrix multiplication, N-body physics,
 and hidden Markov model\footnote{I will describe more details about
 OpenCL workloads that I chose for the experiments in
 Section~\ref{chap:character}}.
@@ -639,13 +639,13 @@ resources.
 However, from seven resources onward, energy consumption jumps up to
 0.7J.
 %
-This is because a typical Wi-Fi networking device can tolerate the
+This is because a typical WiFi networking device can tolerate the
 number of packets to multicast resource request messages and to receive
 the replies from up to six resources without entering into high power
 mode.
 %
 However, the number of packets with seven resources crosses this
-threshold pushing the Wi-Fi device into high power mode and resulting in
+threshold pushing the WiFi device into high power mode and resulting in
 more energy consumption.
 %
 It is worth noting that the overhead of energy consumption from resource
@@ -744,8 +744,8 @@ show the offloading execution time and energy consumption with and
 without SocialVPN, respectively.
 %
 Even though I carried out the experiments using all of the workloads
-I implemented, I only present the results from Sobelfilter because
-other workloads also show the similar trend as Sobelfilter.
+I implemented, I only present the results from sobelfilter because
+other workloads also show the similar trend as sobelfilter.
 %
 As shown in Figure~\ref{fig:overhead_socialvpn1}, as the image size
 increases, the execution time and energy consumption also increase.
