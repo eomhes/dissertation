@@ -14,7 +14,7 @@ network conditions.
 %
 As part of the workload characterization effort through computation to
 communication ratio, I strategically selected four quantitatively and qualitatively 
-different OpcnCL workloads for the analysis:
+different OpenCL workloads for the analysis:
 sobelfilter, matrix multiplication, {\it N}-body physics and hidden
 Markov model, each being classified into two categories: 
 the computation-intensive workload (matrix multiplication and 
@@ -38,7 +38,7 @@ environmental factors such as network conditions and the computing
 capabilities of offloadable resources.
 %
 For example, I configure local area networks by directly connecting a
-mobile device and a remote resource with Nvidia graphics processing
+mobile device and a remote resource with NVIDIA graphics processing
 units via a wireless router which represents the best resource of our
 experimental setups.
 %
@@ -109,27 +109,27 @@ values.
 %
 In order to analyze the behavior of our remote offloading framework
 under the various network conditions and the computing capabilities of
-remote resources, I setup the experiment using various hardwares and
+remote resources, I setup the experiment using various hardware and
 network configurations.
 %
 First of all, the hardware setup consists of a client and various types of
 remote resources.
 %
 I have utilized Android tabletPC, Samsung GalaxyTab 10.1 equipped with
-1GHz dual-core process and 1GB RAM, and running Android honeycomb as the
+1Ghz dual-core process and 1GB RAM, and running Android honeycomb as the
 mobile client.
 %
 I adopted three types of servers: CPU only-installed server,
 GPU-installed server, and Amazon EC2 GPU cluster.
 %
 For CPU only-installed server without a graphics card, I utilized a
-workstation with Intel 3.0GHz Core 2 Duo processor and 8GB memory
+workstation with Intel 3.0Ghz Core 2 Duo processor and 8GB memory
 installed with Linux OS.
 %
 Also, I installed GeForce GT 640 graphics card with 2GB RAM for the
 server with GPUs.
 %
-In addition, I used Amazon EC2 GPU cluster resource with two Nvidia
+In addition, I used Amazon EC2 GPU cluster resource with two NVIDIA
 GPUs equipped with 3GB on-board memory per GPU.\\
 %
 In order to analyze the impact of network conditions on offloading
@@ -179,7 +179,7 @@ for local and wide area networks including Amazon EC2.}
 \label{character:workloads}
 %
 I utilized OpenCL SDK code samples provided by AMD APP
-SDK~\cite{amd} and Nvidia~\cite{nvidia} to choose appropriate workloads for
+SDK~\cite{amd} and NVIDIA~\cite{nvidia} to choose appropriate workloads for
 the remote offloading framework.
 %
 In order to choose appropriate OpenCL workloads among a set of samples,
@@ -194,7 +194,7 @@ data locally divided by the data transfer time for the remote offloading.
 %
 Thus, computation to communication ratio is a
 comprehensive measurement which mirrors three parameters such as the
-the volume of computation of workloads, the amount of data to be transferred, and the
+the volume of computations of workloads, the amount of data to be transferred, and the
 network conditions.
 %
 After careful considerations, I chose four qualitatively and
@@ -380,7 +380,7 @@ regardless of the size of data, while those for matrix multiplication
 and {\it N}-body physics increase as the size of data or the
 number of iterations increases. 
 %
-This is because that the volume of computation for sobelfilter and
+This is because that the volume of computations for sobelfilter and
 hidden Markov model is linearly proportional to the amount of data to be
 processed, while that for matrix multiplication and
 {\it N}-body physics increases exponentially as the size of data or
@@ -394,7 +394,7 @@ as the size of data increases.
 \begin{figure}
 \centering
 \epsfig{file=figs/ctoc_sobelfilter.eps, width=5.0in}
-\caption{Computation to Communicaiton ratio for sobelfilter}
+\caption{Computation to communication ratio for sobelfilter}
 \label{fig:ctoc_sobelfilter}
 \end{figure}
 %
@@ -577,11 +577,11 @@ offloading consumes more than local processing as shown in Figure
 3(a).
 %
 This dissimilar result comes from the discrepancy in the amount of power
-consumed by CPU and the Wi-Fi networking card.
+consumed by CPU and the WiFi networking card.
 %
 According to the measurement data profiled by PowerTutor, CPU consumes
 200$\sim$220{\it mW} per second in active mode, while the
-Wi-Fi networking card consumes about 710$\sim$720{\it mW}
+WiFi networking card consumes about 710$\sim$720{\it mW}
 per second in high power mode.
 %
 For that reason, even though offloading is faster than local processing,
