@@ -99,44 +99,46 @@
 %on-demand code offloading system.
 %
 Mobile computing is becoming the preferred method of personal computing
-environments for millions of users.
+for millions of users.
 %
 In order to meet the increasing demands of computationally-intensive
 applications, recent mobile platforms have been augmented with
 multi-core CPUs, powerful GPUs, and special types of hardware
 accelerators.
 %
-Despite of these enhancements to hardware of mobile platforms, however,
-their limited capacities of the batteries will always act as a
-bottleneck while hindering mobile platforms from utilizing their
+Despite these enhancements to the hardware of mobile platforms,
+their limited battery capacities of the batteries and small form factor
+remain a bottleneck, hindering mobile platforms from utilizing their
 computing capabilities.\\
 %
 To address this restriction, there have been research efforts on remote
-offloading systems which seek for intelligent ways to enable mobile
+offloading systems which seek intelligent ways to enable mobile
 platforms to leverage computing capabilities of more powerful resources
 over the network.
 %
 Even though existing approaches provide core mechanisms to transform
 typical mobile applications to offloading-enabled applications, they
-still lack considerations for service discovery mechanisms while
-assuming the availability of remote computing nodes with static
-endpoints.
+still lack service discovery mechanisms while assuming the availability
+of remote computing nodes with static endpoints.
 %
-Moreover, they have not investigated data privacy and secure
-communication between the mobile client and remote resources, which can
-be a crucial flaw for mobile environments.\\
+Moreover, data privacy and secure communication between the mobile
+client and remote resources are of increasing importance for secure
+computing on mobile environments.\\
 %
 This dissertation presents a novel framework which enables remote
-workload offloading to external resources within a virtual private
-network of the mobile user in which trusted remote computing resources
-are aggregated regardless of user mobility.
+workload offloading to external resources within a social virtual private
+network defined by the mobile user, in which trusted remote computing resources
+are aggregated in a virtual network regardless of user mobility.
 %
 The proposed system accomplishes this by utilizing a peer-to-peer
-virtual private networking technique as a substrate for the discovery
-and configuration of trusted remote resources, and extending OpenCL
-framework, which is an open standard of parallel programming for
-heterogeneous computing environments, to support remote offloading using
-the TCP/IP networking stack.
+virtual private networking technique as a substrate for the discovery,
+configuration of trusted remote resources, and secure communication
+between the mobile device and remote resources.
+% 
+%and extending OpenCL
+%framework, which is an open standard of parallel programming for
+%heterogeneous computing environments, to support remote offloading using
+%the TCP/IP networking stack.
 %
 Based upon the evaluation on the performance of the proposed offloading
 framework, various mobile workloads are characterized for the
@@ -148,8 +150,11 @@ In addition, this dissertation proposes applying machine learning
 techniques to runtime schedulers for mobile offloading frameworks.
 %
 By adopting machine learning techniques to remote offloading scheduling
-problems, the scheduler can learn the offloading effectiveness from
-previous offloading experiences automatically and make decisions on
+problems, decisions on offloading do not rely on application-dependent
+parameters or predefined static scheduling policies. 
+%
+Instead, the scheduler can automatically learn the offloading effectiveness from
+previous offloading experiences and dynamically make decisions on
 whether mobile workloads should be offloaded or executed locally
 according to the current conditions at runtime.
 %
